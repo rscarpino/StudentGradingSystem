@@ -2,11 +2,11 @@
 #define STUDENTGRADING_H
 #include<string>
 
-const int MaxNameLen = 128;
+const int MaxLen = 128;
 
 struct Student
 {
-	char name [MaxNameLen];
+	char name [MaxLen];
 	unsigned long id;
 	unsigned long numCourse;
 };
@@ -19,7 +19,7 @@ struct Course
 	int assignment;
 	int quiz;
 	int exam;
-	char nameCourse [];
+	char nameCourse [MaxLen];
 
 };
 
